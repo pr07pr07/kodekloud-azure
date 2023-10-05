@@ -36,7 +36,7 @@ sudo mkdir -v /var/www/html/red/
 sudo curl "https://raw.githubusercontent.com/rithinskaria/kodekloud-azure/main/AppGateway/sample.html" > /var/www/html/index.html
 sed -i "s/PAGECOLOR/red/g" /var/www/html/index.html
 sed -i "s/VMID/$k/g" /var/www/html/index.html
-cat /var/www/html/index.html > /var/www/html/red/red.html
+sudo cp /var/www/html/index.html /var/www/html/red/red.html
 exit
 '"
 
@@ -58,7 +58,7 @@ sudo mkdir -v /var/www/html/blue/
 sudo curl "https://raw.githubusercontent.com/rithinskaria/kodekloud-azure/main/AppGateway/sample.html" > /var/www/html/index.html
 sed -i "s/PAGECOLOR/blue/g" /var/www/html/index.html
 sed -i "s/VMID/$k/g" /var/www/html/index.html
-cat /var/www/html/index.html > /var/www/html/blue/blue.html
+sudo cp /var/www/html/index.html /var/www/html/blue/blue.html
 exit
 '"
 done
